@@ -10,5 +10,4 @@ app = MultiPage(app_name= "PriceProphet: Housing Price Predictor") # Create an i
 app.add_page("Quick Project Summary", page_summary_body)
 
 
-
 app.run() # Run the  app
