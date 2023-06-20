@@ -81,8 +81,8 @@ def DrawInputsWidgets():
     percentageMin, percentageMax = 0.4, 2.0
 
 # we create input widgets only for 6 features
-    col1, col2, col3, col4 = st.columns(4)
-    col5, col6, col7, col8 = st.columns(4)
+    col1, col2, col3 = st.columns(3)
+    col4, col5, col6 = st.columns(3)
 
     # We are using these features to feed the ML pipeline - values copied from check_variables_for_UI() result
 
@@ -92,7 +92,7 @@ def DrawInputsWidgets():
     # from here on we draw the widget based on the variable type (numerical or categorical)
     # and set initial values
     with col1:
-        feature = "GarageArea"
+        feature = "2ndFlrSF"
         st_widget = st.number_input(
             label=feature,
             min_value=int(df[feature].min()*percentageMin),
@@ -104,7 +104,7 @@ def DrawInputsWidgets():
     X_live[feature] = st_widget
 
     with col2:
-        feature = "GrLivArea"
+        feature = "GarageArea"
         st_widget = st.number_input(
             label=feature,
             min_value=int(df[feature].min()*percentageMin),
@@ -115,7 +115,7 @@ def DrawInputsWidgets():
     X_live[feature] = st_widget
 
     with col3:
-        feature = "OverallQual"
+        feature = "KitchenQual"
         st_widget = st.number_input(
             label=feature,
             min_value=1,
@@ -138,6 +138,17 @@ def DrawInputsWidgets():
 
     with col5:
         feature = "YearBuilt"
+        st_widget = st.number_input(
+            label=feature,
+            min_value=int(df[feature].min()*percentageMin),
+            max_value=date.today().year,
+            value=int(df[feature].median()),
+            step=1
+        )
+    X_live[feature] = st_widget
+
+    with col6:
+        feature = "YearRemodAdd"
         st_widget = st.number_input(
             label=feature,
             min_value=int(df[feature].min()*percentageMin),
