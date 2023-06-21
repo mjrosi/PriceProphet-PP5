@@ -73,37 +73,23 @@ def check_variables_for_UI(house_features):
 
 
 def DrawInputsWidgets():
-
     # load dataset
     df = load_housing_data()
     df['TotalSF'] = df['TotalBsmtSF'] + df['1stFlrSF'] + df['2ndFlrSF']
 
     percentageMin, percentageMax = 0.4, 2.0
 
-# we create input widgets only for 6 features
-    col1, col2, col3 = st.columns(3)
-    col4, col5, col6 = st.columns(3)
-
-    # We are using these features to feed the ML pipeline - values copied from check_variables_for_UI() result
+    # we create input widgets only for 6 features
+    col1, col2, col3, col4 = st.columns(4)
+    col5, col6, col7, col8 = st.columns(4)
 
     # create an empty DataFrame, which will be the live data
     X_live = pd.DataFrame([], index=[0])
 
-    # from here on we draw the widget based on the variable type (numerical or categorical)
+    # draw the widget based on the variable type (numerical or categorical)
     # and set initial values
+
     with col1:
-        feature = "2ndFlrSF"
-        st_widget = st.number_input(
-            label=feature,
-            min_value=int(df[feature].min()*percentageMin),
-            max_value=int(df[feature].max()*percentageMax),
-            value=int(df[feature].median()),
-            step=50
-        )
-
-    X_live[feature] = st_widget
-
-    with col2:
         feature = "GarageArea"
         st_widget = st.number_input(
             label=feature,
@@ -112,18 +98,26 @@ def DrawInputsWidgets():
             value=int(df[feature].median()),
             step=50
         )
-    X_live[feature] = st_widget
+        X_live[feature] = st_widget
+
+    with col2:
+        feature = "2ndFlrSF"
+        st_widget = st.number_input(
+            label=feature,
+            min_value=int(df[feature].min()*percentageMin),
+            max_value=int(df[feature].max()*percentageMax),
+            value=int(df[feature].median()),
+            step=50
+        )
+        X_live[feature] = st_widget
 
     with col3:
         feature = "KitchenQual"
-        st_widget = st.number_input(
+        st_widget = st.selectbox(
             label=feature,
-            min_value=1,
-            max_value=10,
-            value=5,
-            step=1
+            options=df[feature].unique(),
         )
-    X_live[feature] = st_widget
+        X_live[feature] = st_widget
 
     with col4:
         feature = "TotalBsmtSF"
@@ -134,7 +128,7 @@ def DrawInputsWidgets():
             value=int(df[feature].median()),
             step=50
         )
-    X_live[feature] = st_widget
+        X_live[feature] = st_widget
 
     with col5:
         feature = "YearBuilt"
@@ -145,7 +139,7 @@ def DrawInputsWidgets():
             value=int(df[feature].median()),
             step=1
         )
-    X_live[feature] = st_widget
+        X_live[feature] = st_widget
 
     with col6:
         feature = "YearRemodAdd"
@@ -156,6 +150,6 @@ def DrawInputsWidgets():
             value=int(df[feature].median()),
             step=1
         )
-    X_live[feature] = st_widget
+        X_live[feature] = st_widget
 
     return X_live
