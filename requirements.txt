@@ -1,3 +1,4 @@
 # you should list here the libraries you will use in the project
 altair<5
 streamlit==1.13.0
+plotly==4.12.0
