@@ -1,8 +1,7 @@
-# **PriceProphet: Housing Price Forecaster**
+# **PriceProphet: Housing Price Predictor**
 
 PriceProphet (Housing Price Forecaster) is a Machine Learning project designed to assist users in predicting house sales prices using house attributes as input.
 ![Sample Page]()
-The dashboard for [PriceProphet is hosted on Heroku](https://priceprophet-0c0cca8cf791.herokuapp.com).
 
 ## Table of Contents
 
@@ -28,7 +27,7 @@ The dashboard for [PriceProphet is hosted on Heroku](https://priceprophet-0c0cca
 
 * he project's dataset is derived from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We created a fictitious user scenario where predictive analytics can be applied in a real-world work setting.
 
-* The dataset, which includes nearly 1461 rows, represents housing records from Ames, Iowa. The dataset features 22 attributes indicative of the house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sales price for houses constructed between 1872 and 2010.
+* The dataset, which includes 1461 rows, represents housing records from Ames, Iowa. The dataset features 22 attributes indicative of the house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sales price for houses constructed between 1872 and 2010.
 
 The table below denotes the variables, their descriptions, and measurement units. It's important to note that some variables are numerical while others are categorical.
 
@@ -78,7 +77,7 @@ Our client provided us with a public dataset of house prices for Ames, Iowa.
 
 We have agreed on the following business objectives with our client.
 
-* **BR1** -The client wants to uncover how house attributes correlate with the sales price. Consequently, the client expects data visualizations of the variables correlated with the sales price.
+* **BR1** - The client wants to uncover how house attributes correlate with the sales price. Consequently, the client expects data visualizations of the variables correlated with the sales price.
 
 * **BR2** - The client is keen on predicting the house sales price for her 4 inherited houses, and any other house in Ames, Iowa.
 
@@ -88,9 +87,9 @@ To meet the business objectives, we have the following epics and user stories. E
 
 * Information acquisition and data collection.
 
-Data visualization, cleaning, and preparation.
+* Data visualization, cleaning, and preparation.
 
-Model training, fine-tuning, and validation.
+* Model training, fine-tuning, and validation.
 
 * Dashboard planning, designing, and development.
 
@@ -176,11 +175,6 @@ The training data preparation phase involves dropping the 'EnclosedPorch' and 'W
 
 The target variable for our model is 'SalePrice', while the remaining variables are used as features.
 
-<details>
-<summary> Pipeline steps</summary>
-<img src="">
-</details>
-
 
 ## **6. Dashboard Design**
 
@@ -202,9 +196,9 @@ This page shows a quick summary of
 
 * The project has 2 business requirements:
 
-   * **BR1** - The client is interested in discovering how house attributes correlate with sale prices.Therefore, the client expects data visualizations of the correlated variables against the sale price.
+   * **BR1** - The client wants to uncover how house attributes correlate with the sales price. Consequently, the client expects data visualizations of the variables correlated with the sales price..
    
-   * **BR2** - The client is interested in predicting the house sale prices from her 4 inherited houses, and any other house in Ames, Iowa.
+   * **BR2** - The client is keen on predicting the house sales price for her 4 inherited houses, and any other house in Ames, Iowa.
 
 
 <details>
@@ -228,17 +222,17 @@ The page incorporates the following key elements:
 
 <details>
 <summary>Pearson Correlation Heatmap</summary>
-<img src="">
+<img src="docs/plots/heatmap_corr_pearson.png">
 </details>
 
 <details>
 <summary>Spearman Correlation Heatmap</summary>
-<img src="">
+<img src="docs/plots/heatmap_corr_spearman.png">
 </details>
 
 <details>
 <summary> PPS Heatmap</summary>
-<img src="">
+<img src="docs/plots/heatmap_pps.png">
 </details>
 
 #### Target Analysis
@@ -279,7 +273,7 @@ After identifying the features most correlated with the target variable, we anal
 
 3. Hypothesis 3 - Age and Renovation Factor: The age and renovation status of a house, represented by 'YearBuilt' and 'YearRemodAdd', affect its value. Newly built or recently renovated houses are likely to fetch higher prices compared to older, unrenovated houses. If 'YearRemodAdd' is the same as 'YearBuilt', it means there have been no renovations, which might negatively impact the price.
 
-**Correct.** We validated this hypothesis by studying the correlation between the sale price and the years it was built and/or had a remodel added to it. Both features have moderate positive correlation with sale price.
+**Correct.** The Machine Learning model successfully validated all these hypotheses, indicating that these features indeed play a crucial role in determining a house's selling price.
 
 <details>
 <summary>Page 3: Project hypotheses and validation (Screenshot)</summary>
@@ -288,17 +282,13 @@ After identifying the features most correlated with the target variable, we anal
 
 ### **Page 4: Predict House price (BR2)**
 
-* State business requirement 2
+* Our client wishes to leverage machine learning capabilities to predict the sale prices of her four inherited homes, as well as any other house located in Ames, Iowa. Here are the features on this page:
 
-  * The client is interested in predicting the house sale prices from her 4 inherited houses, and any other house in Ames, Iowa.
+* A notification feature that aggregates and presents the total predicted sale price for all four inherited houses. 
 
-* This page displays the 4 houses' attributes and their respective predicted sale price. 
+* A series of interactive widgets designed to accept and process real-time house data, empowering users to estimate prospective sale prices instantly. 
 
-* It displays a message informing the summed predicted price for all 4 inherited houses. 
-
-* Set of interactive input widgets that allow a user to provide real-time house data to predict the sale price.
-
-* "Predict Sale Price" button that serves the new house data to our ML pipelines, and predicts the sale price of the house.
+* A dedicated "Predict Sale Price" button that takes newly entered house data, passes it through our robust machine learning pipelines, and returns an estimated sale price for any house in Ames, Iowa.
 
 
 <details>

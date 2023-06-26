@@ -21,8 +21,7 @@ def page_correlation_study_body():
 
     st.write("### Housing Prices Correlation Study (BR1)")
     st.info(
-        f"* **BR1** - The client is interested in discovering how house attributes correlate with sale prices.\
-             Therefore, the client expects data visualizations of the correlated variables against the sale price. "
+        f"* **BR1** - The client wants to uncover how house attributes correlate with the sales price. Consequently, the client expects data visualizations of the variables correlated with the sales price. "
     )
 
     # inspect data
@@ -44,7 +43,7 @@ def page_correlation_study_body():
         f"* We found that the most correlated variable are:\n **{vars_to_study}**"
     )
 
-    # Text based on "03 - Correlation_Study" notebook - "Conclusions and Next steps" section
+    # Text based on "03 - Data_Exploration" notebook - "Conclusions and Next steps" section
     st.info(
         f"We make the following observations from both the correlation analysis and the plots (particularly the heatmaps below).\n"
         f"* Higher values of 1stFlrSF, GarageArea, GrLivArea, MasVnrArea and TotalBsmtSF are associated with higher sale price.\n"
@@ -53,8 +52,7 @@ def page_correlation_study_body():
         f"While the plots corroborate these observations, we also note,\
          from the plots of sale price against the correlated features,\
          that the relationships become less clear at higher values of the variables.\n"
-        f"* When the size of 1stFlrSF is around 2500, for example, sale price can be low or it can be very high.\n"
-        f"* We see similar pattern in the regression plot of sale price and GarageArea when the latter's value is around 800.\n"
+        f"* for example, When the size of 1stFlrSF is around 2500, sale price can be low or it can be very high.\n"
     )
 
     df_eda = df.filter(vars_to_study + ['SalePrice'])
