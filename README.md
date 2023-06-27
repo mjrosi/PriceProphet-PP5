@@ -1,6 +1,6 @@
 # **PriceProphet: Housing Price Predictor**
 
-PriceProphet (Housing Price Forecaster) is a Machine Learning project designed to assist users in predicting house sales prices using house attributes as input.
+PriceProphet (Housing Price Predictor) is a Machine Learning project designed to assist users in predicting house sales prices using house attributes as input.
 [Dashboard](https://priceprophet-0c0cca8cf791.herokuapp.com/)
 
 ## Table of Contents
