@@ -20,7 +20,7 @@ def page_summary_body():
         f"**Project Dataset**\n"
         f"* The project dataset comes from housing price database from Ames, Iowa.\
          It is available in [Kaggle via Code Institute](https://www.kaggle.com/codeinstitute/housing-prices-data),\
-         The dataset, which includes 1461 rows, represents housing records from Ames, Iowa. The dataset features 22 attributes indicative of the house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sales price for houses constructed between 1872 and 2010."
+         The dataset, which includes 1461 rows, represents housing records from Ames, Iowa. The dataset features 24 attributes indicative of the house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sales price for houses constructed between 1872 and 2010."
     )
 
     # Link to README file, so the users can have access to full project documentation

@@ -27,7 +27,7 @@ PriceProphet (Housing Price Forecaster) is a Machine Learning project designed t
 
 * he project's dataset is derived from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We created a fictitious user scenario where predictive analytics can be applied in a real-world work setting.
 
-* The dataset, which includes 1461 rows, represents housing records from Ames, Iowa. The dataset features 22 attributes indicative of the house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sales price for houses constructed between 1872 and 2010.
+* The dataset, which includes 1461 rows, represents housing records from Ames, Iowa. The dataset features 24 attributes indicative of the house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sales price for houses constructed between 1872 and 2010.
 
 The table below denotes the variables, their descriptions, and measurement units. It's important to note that some variables are numerical while others are categorical.
 
@@ -203,7 +203,7 @@ This page shows a quick summary of
 
 <details>
 <summary>Page 1: Quick project summary (Screenshot)</summary>
-<img src="">
+<img src="docs/screenshots/Screenshot_summary_page.png">
 </details>
 
 ### **Page 2: House prices Correlation Study (BR1)**
@@ -262,7 +262,7 @@ After identifying the features most correlated with the target variable, we anal
 
 <details>
 <summary>Page 2: House prices Correlation Study (Screenshot)</summary>
-<img src="">
+<img src="docs/screenshots/Screenshot_correlation_study_page.png">
 </details>
 
 ### **Page 3: Project hypotheses and validation**
@@ -277,7 +277,7 @@ After identifying the features most correlated with the target variable, we anal
 
 <details>
 <summary>Page 3: Project hypotheses and validation (Screenshot)</summary>
-<img src="">
+<img src="docs/screenshots/Screenshot_hypo_valid_page.png">
 </details>
 
 ### **Page 4: Predict House price (BR2)**
@@ -293,7 +293,7 @@ After identifying the features most correlated with the target variable, we anal
 
 <details>
 <summary>Page 4: Predict House price (Screenshot)</summary>
-<img src="">
+<img src="docs/screenshots/Screenshot_Predict_Price_page.png">
 </details>
 
 ### **Page 5: ML: House Price Predictor**
@@ -310,14 +310,15 @@ This page presents:
 
 <details>
 <summary>Feature Importance</summary>
-<img src="">
+<img src="docs/screenshots/Screenshot_feature_importance.png">
 </details>
 
 <details>
 <summary>Page 5: ML: House Price Predictor (Screenshot)</summary>
-<img src="">
-<img src="">
-<img src="">
+<img src="docs/screenshots/Screenshot_ML_page_1.png">
+<img src="docs/screenshots/Screenshot_ML_page_2.png">
+<img src="docs/screenshots/Screenshot_ML_page_3.png">
+<img src="docs/screenshots/Screenshot_ML_page_4.png">
 </details>
 
 ## **7. Unfixed Bugs**
@@ -345,41 +346,41 @@ This page presents:
 
 ## **9. Main Data Analysis and Machine Learning Libraries**
 
-* Here is a list of the libraries I used in the project. The version number of each library can be found in the [requirements file](https://github.com/mjrosi/PriceProphet-PP5/blob/main/requirements.txt) of this project.
+* Here is a list of the libraries I used in the project. All The libraries can be found in the [requirements file](https://github.com/mjrosi/PriceProphet-PP5/blob/main/requirements.txt) of this project.
 
-* Numpy was used to generate arrays of random numbers such as the mask of zeros used in the correlation heatmaps.
+* NumPy (version 1.23.5): Utilized for numerical computing in Python, enabling efficient computation and manipulation of arrays and matrices.
 
-* Pandas: to convert CSV data to DataFrame and make data management and manipulation with the help of builtin functionalities easier. 
+* Pandas (version 1.5.3): Provides data structures, like DataFrame and Series, that allow efficient data manipulation and analysis.
 
-* Scikit-learn: was used to train and evaluate the ML model that was then used to predict sale price. The training involves cross validation and hyperparameter optimization in an effort to identify the most appropriate model and specify the optimal parameters that enhance model performance.
+* Matplotlib (version 3.7.1): Used to create different types of plots, serving as an essential tool for exploratory data analysis.
 
-* Matplot-lib was used to generate different types of plots.
+* Seaborn (version 0.12.2): Improves the visual appeal of Matplotlib graphics, was used to create statistical graphs such as heatmaps.
 
-* Seaborn was used to create statistical graphs such as heatmaps. It augments the functionalities of matplot-lib.
+* Scikit-learn (version 1.2.2): An integral Python library for machine learning. The machine learning model was trained and then used to predict sales prices. This training used cross-validation and hyperparameter optimization to find the best model and determine the ideal settings for top performance.
 
-* Jupyter: an interactive environment to create the notebooks where I collect data, clean the data, conduct correlation study, do feature engineering, train and evaluate ML model. 
+* SciPy (version 1.10.1): A Python library used for scientific computing, providing additional modules for optimization.
 
-* StreamLit: to create a dashboard with important information organized in separate pages and an interactive UI for predicting sale price of a house.
+* Joblib (version 1.2.0): Was used for saving and loading scikit-learn models or large numpy arrays, thus facilitating the building of machine learning pipelines.
 
-* pandas-profiling was used to inspect each variable in the dataset to better understand the data and identify potential need for data cleaning.
-* ppscore was used to calculate the relationships between different pairs of variables in the dataset irrespective of the data type of each variable.
-* feature-engine was used to conduct feature engineering to prepare the dataset for the machine learning process. For example, I used feature-engine to encode and transform variables.
+* Plotly (version 5.15.0): An open-source plotting library used to create a variety of plots and dashboards.
+
+* Streamlit (version 1.13.0): An open-source app framework that simplifies the creation of custom web apps for machine learning and data science projects.
+
+* Jupyter Notebook: is employed as an interactive computational environment for developing, documenting, and executing code, commonly for data cleaning and transformation, numerical simulation, statistical modeling, and machine learning.
 
 
 ## **10. Credits**
  
 ### **Code**
 
-- I have reused and adapted code from different sections of the course as well as the walk through projects.
-
-- Specific locations of the sources of the code are referred to in inline comments and doc strings in each notebook or python file.
+* Code from different sections of the course and walk-through projects was reused and adapted.
+* The specific sources of this code are mentioned in inline comments and docstrings in each notebook or Python file.
 
  
 ### **Content**
 
 - The outline of this documentation was taken from the accompanying (to the project) [code repository](https://github.com/Code-Institute-Solutions/milestone-project-heritage-housing-issues) provided by the [Code Institute](https://codeinstitute.net).  
 
-- The icon in the dashboard app was taken from [this page](https://twemoji.maxcdn.com/2/test/preview.html) 
 
 ### **Acknowledgements**
 
