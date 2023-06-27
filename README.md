@@ -1,7 +1,7 @@
 # **PriceProphet: Housing Price Predictor**
 
 PriceProphet (Housing Price Forecaster) is a Machine Learning project designed to assist users in predicting house sales prices using house attributes as input.
-![Sample Page]()
+![Dashboard](https://priceprophet-0c0cca8cf791.herokuapp.com/)
 
 ## Table of Contents
 
@@ -25,7 +25,7 @@ PriceProphet (Housing Price Forecaster) is a Machine Learning project designed t
 
 ## **1. Dataset Content**
 
-* he project's dataset is derived from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We created a fictitious user scenario where predictive analytics can be applied in a real-world work setting.
+* The project's dataset is derived from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We created a fictitious user scenario where predictive analytics can be applied in a real-world work setting.
 
 * The dataset, which includes 1461 rows, represents housing records from Ames, Iowa. The dataset features 24 attributes indicative of the house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sales price for houses constructed between 1872 and 2010.
 
@@ -156,8 +156,8 @@ Our ideal outcome is to offer our client actionable insights into which house at
 
 
 Our success metrics for the machine learning model are defined as follows:
-	* Achieve a minimum R2 score of 0.75 on both the training and testing sets.
-	* The model is deemed unsuccessful if its predictions deviate by more than 25% from the actual price for a given house.
+* Achieve a minimum R2 score of 0.75 on both the training and testing sets.
+* The model is deemed unsuccessful if its predictions deviate by more than 25% from the actual price for a given house.
 
 The model output is a continuous value, indicating the estimated sale price in USD. We presume this model will provide accurate predictions for houses with known, relevant attributes.
 
@@ -169,7 +169,7 @@ This model caters to our client's needs as it not only estimates the prices for 
 
 In order to ensure the most accurate estimates, our model deviates from traditional heuristics, favoring a machine learning approach that utilizes regression algorithms to avoid inaccurate appraisals.
 
-The training data for our PriceProphet (Housing Price Forecaster) model is sourced from a public dataset from Ames, Iowa, encompassing roughly 1,500 property price records and 22 distinct features.
+The training data for our PriceProphet (Housing Price Forecaster) model is sourced from a public dataset from Ames, Iowa, encompassing roughly 1,500 property price records and 24 distinct features.
 
 The training data preparation phase involves dropping the 'EnclosedPorch' and 'WoodDeckSF' variables due to their high percentage of missing values (above 75%).
 

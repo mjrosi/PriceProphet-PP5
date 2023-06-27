@@ -33,7 +33,7 @@ def page_ml_predict_price_body():
                  attributes. We were able to achieve this success metric, but we trained different\
                  versions of the model to make sure that we don't pverlook potential improvement.\n"
         f"* The pipeline performance for the best model on the train and test set is\
-             R2 == 0.84 and R2 == 0.77 respectively.\n"
+             R2 == 1 and R2 == 0.823 respectively.\n"
         f"* We present the pipeline steps, best features list along with feature importance plot, pipeline performance and regression performance report below. "
     )
     st.write("---")
