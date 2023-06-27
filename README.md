@@ -1,7 +1,7 @@
 # **PriceProphet: Housing Price Predictor**
 
 PriceProphet (Housing Price Forecaster) is a Machine Learning project designed to assist users in predicting house sales prices using house attributes as input.
-![Dashboard](https://priceprophet-0c0cca8cf791.herokuapp.com/)
+[Dashboard](https://priceprophet-0c0cca8cf791.herokuapp.com/)
 
 ## Table of Contents
 
@@ -334,7 +334,7 @@ This page presents:
 
 ### **Heroku**
 
-* The App live link is: https://priceprophet-0c0cca8cf791.herokuapp.com/
+* The App live link is: [Dashboard](https://priceprophet-0c0cca8cf791.herokuapp.com/)
 
 * The project was deployed to Heroku using the following steps.
 
@@ -389,5 +389,9 @@ This page presents:
 
 ### **Acknowledgements**
 
-* I would like to thank my mentor, Mo Shami, for his kind support and inspiring comments.
+Special thanks to my mentor, Mo Shami, for the invaluable guidance and insights throughout this project. I appreciate the patience and expertise that were greatly beneficial.
+
+Also, I'm grateful to my partner for the consistent support and collaboration during this project. Your contributions were key to its success.
+
+Thank you for your time and efforts invested in my development.
 

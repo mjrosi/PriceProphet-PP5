@@ -4,7 +4,7 @@ import streamlit as st
 def page_project_hypothesis_body():
     st.write("### Project Hypotheses and Validation")
 
-    # conclusions taken from "03 - Correlation_Study" notebook
+    # conclusions taken from "03 - Data_Exploration" notebook
     st.success(
         f"**Hypothesis 1 - Space Impact:.** Larger houses, indicated by larger values for '2ndFlrSF', 'GarageArea', and 'TotalBsmtSF', are likely to be more expensive. These features represent the size of different areas of a house. The larger these areas, the higher the expected value of the house.\n\n"
         f"**Hypothesis 2 - Quality Influence:** The quality of a house's kitchen, denoted by 'KitchenQual', significantly impacts the house price. High-quality kitchens are a desirable feature for many homebuyers, and therefore, houses with high-quality kitchens are expected to have a higher sale price.\n\n"
