@@ -175,6 +175,11 @@ The training data preparation phase involves dropping the 'EnclosedPorch' and 'W
 
 The target variable for our model is 'SalePrice', while the remaining variables are used as features.
 
+<details>
+<summary>Pipeline steps</summary>
+<img src="docs/screenshots/Screenshot_ML_Pipelines.png">
+</details>
+
 
 ## **6. Dashboard Design**
 
